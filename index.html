@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Happy Birthday 🎉</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {margin: 0;text-align: center;font-family: Arial, sans-serif;background: linear-gradient(to right, #ff9a9e, #fad0c4);color:white;}
+        h1 {margin-top: 50px;font-size: 50px;font-weight: bold; background: linear-gradient(45deg, #ff6f91, #ffdde1, #ff9a9e, #fad0c4);background-size: 300%;-webkit-background-clip: text;-webkit-text-fill-color: transparent; animation: gradientMove 5s infinite linear, glow 2s infinite alternate, float 3s infinite ease-in-out;}
+    @keyframes gradientMove {
+        0% { background-position: 0%; }
+        100% { background-position: 100%; }}
+
+    /* Phát sáng */
+    @keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #ff6f91;
+        }
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 40px #ff1493;
+        }
+    }
+
+    /* Nhấp nhô nhẹ */
+    @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+    }
+        h2 {
+      font-size: 50px;
+      font-weight: bold;
+      text-align: center;
+
+      /* 🌈 Màu cầu vồng */
+      background: linear-gradient(
+        270deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet,
+        red
+      );
+      background-size: 800%;
+
+      /* animation */
+      animation: rainbowMove 6s linear infinite, sparkle 2s ease-in-out infinite;
+    }
+
+    /* 🌈 gradient chạy */
+    @keyframes rainbowMove {
+      0% { background-position: 0% }
+      100% { background-position: 400% }
+    }
+
+    /* ✨ nhấp nháy */
+    @keyframes sparkle {
+      0%, 100% {
+        text-shadow:
+          0 0 10px rgba(255,255,255,0.8),
+          0 0 20px rgba(255,0,255,0.6),
+          0 0 30px rgba(0,255,255,0.6);
+      }
+      50% {
+        text-shadow:
+          0 0 20px rgba(255,255,255,1),
+          0 0 40px rgba(255,0,255,1),
+          0 0 60px rgba(0,255,255,1);
+      }
+    }
+        p {font-size: 20px;}
+        .gallery {margin-top: 20px;}
+        .gallery img {width: 200px;height: 200px;object-fit: cover;border-radius: 20px;margin: 10px;box-shadow: 0 5px 15px rgba(0,0,0,0.3);}
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 12px;
+            background: white;
+            color: #ff6f91;
+            cursor: pointer;
+            margin-top: 20px;}
+        .cake {font-size: 80px;margin-top: 10px;}
+        .hearts {position: relative;}
+    .hearts span {position: absolute;font-size: 25px;animation: floatHeart 5s linear infinite;opacity: 0;}
+    /* mỗi tim bay khác nhau */
+    .hearts span:nth-child(1) {
+        left: 40%;
+        animation-delay: 0s;
+    }
+    .hearts span:nth-child(2) {
+        left: 50%;
+        animation-delay: 1s;
+    }
+    .hearts span:nth-child(3) {
+        left: 60%;
+        animation-delay: 2s;
+    }
+    .hearts span:nth-child(4) {left: 45%;animation-delay: 3s;}
+    .hearts span:nth-child(5) {left: 55%;animation-delay: 4s;}
+
+    /* animation bay lên */
+    @keyframes floatHeart {
+        0% {transform: translateY(0) scale(0.5);opacity: 0;}
+        30% {opacity: 1;}
+        100% {transform: translateY(-150px) scale(1.2);opacity: 0;}
+    }
+    @keyframes floatHeart {
+        0% {
+            transform: translateY(0) scale(0.5) rotate(0deg);
+            opacity: 0;
+        }
+        50% {
+            transform: translateY(-80px) scale(1) rotate(180deg);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-150px) scale(1.2) rotate(360deg);
+            opacity: 0;
+        }
+    }
+    </style>
+</head>
+<body>
+
+    <h1>🎉 Happy Birthday 💖</h1>
+    <h2>today is SINH NHẬT TUỔI 18 CỦA VÕ NGỌC QUỲNH ANH</h2>
+    <p id="message">Cảm ơn vì đã ở bên✨</p>
+    <div class="hearts">
+    <span>💗</span>
+    <span>💖</span>
+    <span>💘</span>
+    <span>💝</span>
+    <span>💕</span>
+    </div>
+    <div class="cake">🎂</div>
+
+    <!-- Ảnh kỷ niệm -->
+    <div class="gallery">
+        <img src="iu qanh lắm ớ.img" alt="">
+        <img src="tình bạn plastic.img" alt="">
+        <img src="qanh.img" alt="">
+    </div>
+    <div class="letter-container">
+      <div class="envelope" onclick="openLetter()">
+        <div class="flap"></div>
+        <div class="body"></div>
+      </div>
+
+      <div class="letter" id="letter">
+        <h2>💖 Gửi em xa nhớ,💖</h2>
+        <p>
+          Chị ở xa đức Alexandra Võ mấy vạn dặm trùng dương, chỉ mong em có 1 sanh thần thật an lành và hạnh 🎂✨<br>
+          💕<br>
+          Vậy là tụi mình đã ở bên nhau đến khi Quỳnh Anh thành người lớn thiệt rùi nè, em xúc động lắm ó! Chúc Quỳnh Anh tuổi 18 thật thành công rực rỡ, hạnh phúc tràn đầy, tâm hồn thư thái, sức khỏe cường  qua tuổi 17 rồi vẫn bẻ gãy sừng trâu nha. Mong là ở độ tuổi đẹp nhất này Qanh sẽ được phát triển rực rỡ nhất hehe, Qanh giỏi lắm áaa nên nhất định phải thực hiện được mọi ước mơ nha. Hong biết tụi mình sẽ đi bên nhau đến khi nào nhưng mà Linh mong quãng đường phía trước, cái adulthood của QAnh sẽ như những gì Qanh mong muốn, mong Qanh sẽ đi trên con đường trải hoa hồng, luôn được yêu thương bởi mọi người xung quanh nhe 🌈
+          <br>Cũng hong biết nói gì nhiều nhưng mà túm cái quần lại là chúc Quỳnh Anh đón nhận mọi điều tốt đẹp nhất trên đời
+          <p>Thương,
+           <br> bính le,
+           <br> Yến Linh
+        </p>
+      </div>
+    </div>
+    <script>
+        function openLetter() {
+          const envelope = document.querySelector(".envelope");
+          envelope.classList.toggle("open");
+        }
+    </script>
+
+    <button onclick="playMusic()">Quà sinh nhật quý giá nhứt trần đời🎁</button>
+
+    <!-- Nhạc -->
+    <audio id="music" src="LỜI CA.mp3"></audio>
+
+    <script>
+        function playMusic() {
+            document.getElementById("message").innerHTML =
+                "Cảm ơn vì đã xuất hiện trong cuộc đời mình 💕";
+
+            document.getElementById("music").play();}
+    </script>
+    <script>
+    /* ===================== */
+    /* TIM BAY LIÊN TỤC */
+    /* ===================== */
+    function createFlyingHeart() {
+        const heart = document.createElement("div");
+        heart.className = "heart";
+        heart.innerHTML = ["💗","💖","💘","💕"][Math.floor(Math.random()*4)];
+
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.animationDuration = (4 + Math.random()*3) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 6000);
+    }
+
+    setInterval(createFlyingHeart, 300);
+
+
+    /* ===================== */
+    /* CLICK NỔ TIM */
+    /* ===================== */
+    document.addEventListener("click", function(e) {
+        const burst = document.createElement("div");
+        burst.className = "burst";
+        burst.style.left = e.clientX + "px";
+        burst.style.top = e.clientY + "px";
+
+        for (let i = 0; i < 8; i++) {
+            const span = document.createElement("span");
+            span.innerHTML = "💖";
+
+            const angle = Math.random() * 2 * Math.PI;
+            const distance = 80 + Math.random() * 40;
+
+            span.style.setProperty("--x", Math.cos(angle) * distance + "px");
+            span.style.setProperty("--y", Math.sin(angle) * distance + "px");
+
+            burst.appendChild(span);
+        }
+
+        document.body.appendChild(burst);
+
+        setTimeout(() => {
+            burst.remove();
+        }, 1000);
+    });
+    </script>
+    <canvas id="fireworks"></canvas>
+    <style>
+    #fireworks {position: fixed;top: 0;left: 0;pointer-events: none;}
+    </style>
+    <script>
+    const canvas = document.getElementById("fireworks");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    window.addEventListener("resize", () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+    let particles = [];
+    /* TẠO PHÁO HOA */
+    function createFirework(x, y) {
+        for (let i = 0; i < 50; i++) {
+            particles.push({
+                x: x,
+                y: y,
+                speed: Math.random() * 5 + 2,
+                angle: Math.random() * 2 * Math.PI,
+                radius: 2,
+                alpha: 1
+            });
+        }
+    }
+
+    /* ANIMATION */
+    function animate() {
+        ctx.fillStyle = "rgba(0,0,0,0.1)";
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        particles.forEach((p, i) => {
+            p.x += Math.cos(p.angle) * p.speed;
+            p.y += Math.sin(p.angle) * p.speed;
+            p.alpha -= 0.02;
+
+            ctx.beginPath();
+            ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+            ctx.fillStyle = "rgba(255, 105, 180," + p.alpha + ")";
+            ctx.fill();
+
+            if (p.alpha <= 0) particles.splice(i, 1);
+        });
+
+        requestAnimationFrame(animate);
+    }
+
+    animate();
+
+    /* CLICK NỔ PHÁO HOA */
+    document.addEventListener("click", function(e) {
+        createFirework(e.clientX, e.clientY);
+    });
+
+    /* AUTO BẮN PHÁO HOA */
+    setInterval(() => {
+        createFirework(
+            Math.random() * canvas.width,
+            Math.random() * canvas.height / 2
+        );
+    }, 800);
+    setTimeout(() => {canvas.remove();}, 4000);
+    </script>
+
+
+</body>
+</html>
